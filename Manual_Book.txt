@@ -1,0 +1,87 @@
+====================================================================
+                  MANUAL BOOK - HOAXISLAND v1.0
+     Asisten Pemeriksa Fakta & Detektor Hoaks Berbasis AI
+====================================================================
+
+1. TENTANG HOAXISLAND
+HoaxIsland adalah aplikasi ringan untuk Windows yang membantu Anda
+memverifikasi kebenaran berita, pesan berantai, atau klaim di internet
+secara cepat melalui antarmuka "Dynamic Island" di pojok kiri atas
+layar.
+
+--------------------------------------------------------------------
+2. CARA MENDAPATKAN GROQ API KEY (GRATIS)
+Aplikasi ini membutuhkan Groq API Key agar mesin AI dapat menganalisis
+klaim. Anda dapat membuatnya secara gratis dalam 1 menit:
+
+a. Buka browser dan kunjungi: https://console.groq.com/keys
+b. Masuk (Login) menggunakan akun Google atau GitHub Anda.
+c. Klik tombol "Create API Key".
+d. Beri nama bebas (misalnya: HoaxIsland), lalu klik "Submit".
+e. Salin (Copy) kode kunci yang muncul (diawali huruf "gsk_...").
+
+--------------------------------------------------------------------
+3. MEMASUKKAN & MENGGANTI GROQ API KEY
+a. Saat HoaxIsland pertama kali dijalankan, jendela pengaturan API Key
+   akan muncul secara otomatis.
+b. Tempel (Paste) kode "gsk_..." Anda ke kolom yang tersedia, lalu
+   klik "Simpan API Key".
+c. Jika ingin mengganti API Key di kemudian hari, tersedia dua cara:
+   - Arahkan kursor ke poni di pojok kiri atas layar hingga kapsul
+     terbuka, lalu klik tombol "⚙ Ganti API" di bagian atas kapsul.
+   - Atau klik kanan ikon HoaxIsland di System Tray (pojok kanan
+     bawah Windows, dekat jam), lalu pilih "Atur / Ganti Groq API Key...".
+d. Kunci disimpan secara lokal dan aman di komputer Anda pada:
+   %APPDATA%\HoaxIsland\config.env
+
+--------------------------------------------------------------------
+4. CARA MENGGUNAKAN APLIKASI
+Setelah aktif, HoaxIsland akan bersembunyi sebagai poni (notch) tipis
+bergaris biru di tepi pojok kiri atas layar Anda.
+
+Metode A - Pintasan Keyboard (Paling Cepat):
+1. Blok (select) kalimat atau paragraf berita yang ingin diperiksa
+   di browser, WhatsApp Desktop, atau dokumen PDF.
+2. Tekan tombol: Ctrl + Shift + H secara bersamaan.
+3. Kapsul akan turun otomatis dan menampilkan hasil verifikasi.
+
+Metode B - Seret & Lepas (Drag and Drop):
+1. Blok teks klaim di browser.
+2. Seret (drag) teks tersebut ke poni tipis di pojok kiri atas layar.
+3. Lepaskan klik mouse saat kapsul menyala biru.
+
+Membaca Status Hasil:
+- FAKTA (Hijau)               : Klaim sesuai dengan referensi berita.
+- HOAKS (Merah)               : Klaim terbukti salah / tidak berdasar.
+- MENYESATKAN (Kuning)        : Klaim mencampur fakta dengan konteks keliru.
+- BELUM TERVERIFIKASI (Biru)  : Belum ditemukan rujukan resmi yang cukup.
+
+Tombol pada Kartu Hasil:
+- ⚙ Ganti API     : Mengubah atau memperbarui Groq API Key aktif.
+- Salin Hasil     : Menyalin status, ringkasan, dan sumber ke clipboard.
+- Kunjungi Sumber : Membuka artikel berita rujukan langsung di browser
+                    (berubah menjadi "Cari di Google" jika klaim bersifat
+                    pengetahuan umum tanpa tautan artikel spesifik).
+- Lipat ke Poni   : Menyembunyikan kembali kartu ke poni pojok kiri atas.
+
+--------------------------------------------------------------------
+5. PEMANTAUAN KUOTA TOKEN REAL-TIME (RATE LIMIT)
+Akun gratis Groq memiliki batas pemakaian per menit (TPM) dan per hari
+(RPD) yang di-reset secara otomatis. Pada bagian bawah kartu hasil
+(serta saat kursor diarahkan ke ikon System Tray), tampil indikator
+kuota real-time dengan format:
+
+⚡ Pakai: [jumlah] token · Sisa Menit: [sisa]/[batas] TPM · Harian: [sisa]/[batas] req
+
+Catatan:
+- Jika Anda memeriksa banyak klaim berturut-turut dalam waktu singkat
+  hingga kuota menitan habis (error 429), aplikasi otomatis beralih
+  ke model AI cadangan di akun Anda.
+- Jika seluruh model sedang mencapai batas menitan, tunggu sekitar
+  1 menit hingga kuota otomatis pulih kembali.
+
+--------------------------------------------------------------------
+6. KELUAR DARI APLIKASI
+Klik tanda silang (×) di pojok kanan atas kapsul saat terbuka, atau
+klik kanan ikon HoaxIsland di System Tray lalu pilih "Keluar".
+====================================================================

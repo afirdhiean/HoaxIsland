@@ -1,0 +1,11 @@
+# Kredensial rahasia (JANGAN PERNAH DIUNGGAH)
+.env
+*.env
+
+# Hasil kompilasi & folder sementara
+build/
+dist/
+__pycache__/
+*.pyc
+*.spec
+Bahan_Installer/
