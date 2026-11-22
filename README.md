@@ -11,14 +11,14 @@ Asisten pemeriksa fakta dan detektor hoaks ringan untuk Windows dengan antarmuka
 * **BYOK (Bring Your Own Key):** Pengguna dapat memasukkan dan mengganti Groq API Key gratis mereka sendiri langsung dari antarmuka aplikasi.
 
 ## 📥 Instalasi (Windows)
-1. Buka halaman **[Releases](../../releases)** di repositori ini.
+1. Buka halaman **https://github.com/afirdhiean/HoaxIsland/releases/tag/v1.0.0** di repositori ini.
 2. Unduh file **`HoaxIsland_Setup.exe`** versi terbaru.
 3. Jalankan installer hingga selesai (jika muncul peringatan *Windows SmartScreen*, klik **More info** > **Run anyway**).
 4. Saat pertama kali dijalankan, masukkan **Groq API Key** gratis milikmu (bisa dibuat di [console.groq.com/keys](https://console.groq.com/keys)).
 
 ## 🛠️ Menjalankan dari Kode Sumber (Untuk Developer)
 ```bash
-git clone [https://github.com/USERNAME_KAMU/HoaxIsland.git](https://github.com/USERNAME_KAMU/HoaxIsland.git)
+git clone [https://github.com/afirdhiean/HoaxIsland.git](https://github.com/afirdhiean/HoaxIsland.git)
 cd HoaxIsland
 pip install -r requirements.txt
 python main.py
